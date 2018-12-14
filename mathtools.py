@@ -18,3 +18,10 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
+
+def factorial(n):
+    '''Returns the factorial of a number'''
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
