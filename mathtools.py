@@ -11,7 +11,6 @@ def isPrime(n):
             return False
     return True
 
-
 def factorial(n):
     '''Returns the factorial of a number'''
     if n == 0:
@@ -27,3 +26,13 @@ def arithmetic(a, difference, n):
     sequence = [a+difference*x for x in range(n)]
     #Calculates its sum
     return sum(sequence)
+
+def fib(n):
+    ''' Calculates the n value of the fibonacci sequence'''
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
+
