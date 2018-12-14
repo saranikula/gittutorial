@@ -19,9 +19,12 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-def factorial(n):
-    '''Returns the factorial of a number'''
+
+def fib(n):
+    ''' Calculates the n value of the fibonacci sequence'''
     if n == 0:
+        return 0
+    elif n == 1:
         return 1
     else:
-        return n * factorial(n-1)
+        return fib(n-1)+fib(n-2)
